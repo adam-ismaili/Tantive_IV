@@ -1,11 +1,13 @@
 #include "Robot.h"
 
 #include <iostream>
+#include "Story.h"
 
 #include <frc/smartdashboard/SmartDashboard.h>
 
 void Robot::RobotInit()
 {
+    Story adam_n_rand = new Story::Story();
 }
 
 void Robot::RobotPeriodic() 
@@ -22,6 +24,7 @@ void Robot::AutonomousPeriodic()
 
 void Robot::TeleopInit() 
 {
+    adam_n_rand.Play();
 }
 
 void Robot::TeleopPeriodic() 
